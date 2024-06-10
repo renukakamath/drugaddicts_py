@@ -1,0 +1,85 @@
+{% include 'psychologistheader.html'%}
+
+<section id="hero" class="hero d-flex align-items-center" style="height: auto">
+
+    <div class="container">
+      <div class="row">
+              
+                  <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+ <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/values-1.png" class="img-fluid" alt="" style="margin-right: -44em">
+
+<br><br><br><br><br><br>
+
+		<form method="post" enctype="multipart/form-data" style="margin-top: -1em;">
+	<center>
+	
+		<h1> 	Add Meditation & Medicine</h1>
+	
+		<table class="table" style="width: 500px">
+	
+			<tr>
+				<th>Meditation Details</th>
+				<td><input type="text" name="medi" required class="form-control"></td>
+			</tr>
+			<tr>
+				<th>Meditation File </th>
+				<td><input type="file" name="mef" required class="form-control"></td>
+			</tr>
+			<tr>
+				<th>Medicine Details </th>
+				<td><input type="text" name="med" required class="form-control"></td>
+			</tr>
+			<tr>
+				<th>Medicine File </th>
+				<td><input type="file" name="mf" required class="form-control"></td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2"><input type="submit" name="add" value="ADD" class="btn btn-success"></td>
+			</tr>
+		</table>
+ 		</form>
+
+
+	<h1 style="color: black">View Schedule Date</h1>
+					<form method="post">
+
+		<table class="table" style="width: auto;">
+			<tr>
+				
+				<th>slno</th>
+				<th>Meditation Details</th>
+
+				<th>Meditation File </th>
+
+				<th>Medicine Details </th>
+
+				<th>Medicine File </th>
+			</tr>
+	
+				{% for row in data['view']%}
+			<tr>
+				
+				<td>{{loop.index}}</td>
+				<td>{{row['meditation_details']}}</td>
+				<td><img src="/{{row['meditation_file']}}" style="width: 100px;height: 100px"></td>
+				<td>{{row['medicine_details']}}</td>
+				<td><img src="/{{row['medicine_file']}}" style="width: 100px;height: 100px"></td>
+								
+				
+			</tr>
+				{% endfor %}
+			
+
+		</table>
+
+</form>
+</center>
+</div>
+<!--           </div>
+ -->        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+{% include 'footer.html'%}

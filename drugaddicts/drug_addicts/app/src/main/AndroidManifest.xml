@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.drug_addicts">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/images"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/images"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Drug_addicts"
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".UserViewOthersPost"></activity>
+        <activity android:name=".UserUploadpost" />
+        <activity android:name=".Userviewbooking" />
+        <activity android:name=".userviewmedicineandmedition" />
+        <activity android:name=".viewmybooking" />
+        <activity android:name=".userviewsheduletime" />
+        <activity android:name=".userviewpsychologist" />
+        <activity android:name=".IPsetting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".userviewprofile" />
+        <activity android:name=".ChatHere" />
+        <activity android:name=".userhome" />
+        <activity android:name=".login" />
+        <activity android:name=".userregister" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

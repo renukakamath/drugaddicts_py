@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/renuk/OneDrive/Desktop/RISS/python/drugaddicts (2)/drugaddicts/drug_addicts/app/src/main/res/layout/activity_chat_here.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/OneDrive/Desktop/RISS/python/drugaddicts (2)/drugaddicts/drug_addicts/app/src/main/res/layout/activity_i_psetting.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/OneDrive/Desktop/RISS/python/drugaddicts (2)/drugaddicts/drug_addicts/app/src/main/res/layout/activity_login.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/OneDrive/Desktop/RISS/python/drugaddicts (2)/drugaddicts/drug_addicts/app/src/main/res/layout/activity_main.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/OneDrive/Desktop/RISS/python/drugaddicts (2)/drugaddicts/drug_addicts/app/src/main/res/layout/activity_user_uploadpost.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/OneDrive/Desktop/RISS/python/drugaddicts (2)/drugaddicts/drug_addicts/app/src/main/res/layout/activity_user_view_others_post.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/OneDrive/Desktop/RISS/python/drugaddicts (2)/drugaddicts/drug_addicts/app/src/main/res/layout/activity_userhome.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/OneDrive/Desktop/RISS/python/drugaddicts (2)/drugaddicts/drug_addicts/app/src/main/res/layout/activity_userregister.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/OneDrive/Desktop/RISS/python/drugaddicts (2)/drugaddicts/drug_addicts/app/src/main/res/layout/activity_userviewbooking.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/OneDrive/Desktop/RISS/python/drugaddicts (2)/drugaddicts/drug_addicts/app/src/main/res/layout/activity_userviewmedicineandmedition.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/OneDrive/Desktop/RISS/python/drugaddicts (2)/drugaddicts/drug_addicts/app/src/main/res/layout/activity_userviewprofile.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/OneDrive/Desktop/RISS/python/drugaddicts (2)/drugaddicts/drug_addicts/app/src/main/res/layout/activity_userviewpsychologist.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/OneDrive/Desktop/RISS/python/drugaddicts (2)/drugaddicts/drug_addicts/app/src/main/res/layout/activity_userviewsheduletime.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/OneDrive/Desktop/RISS/python/drugaddicts (2)/drugaddicts/drug_addicts/app/src/main/res/layout/activity_viewmybooking.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/OneDrive/Desktop/RISS/python/drugaddicts (2)/drugaddicts/drug_addicts/app/src/main/res/layout/cust_images.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/OneDrive/Desktop/RISS/python/drugaddicts (2)/drugaddicts/drug_addicts/app/src/main/res/layout/customlist_chat.xml" value="0.1308876811594203" />
+        <entry key="..\:/Users/renuk/OneDrive/Desktop/RISS/python/drugaddicts (2)/drugaddicts/drug_addicts/app/src/main/res/layout/custtext.xml" value="0.1308876811594203" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

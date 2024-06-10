@@ -1,0 +1,64 @@
+{% include 'psychologistheader.html'%}
+
+<section id="hero" class="hero d-flex align-items-center" style="height: auto">
+
+    <div class="container">
+      <div class="row">
+              
+                  <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+ <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/values-1.png" class="img-fluid" alt="" style="margin-right: -44em">
+
+
+
+		<form method="post" style="margin-top: -1em">
+	<center>
+	
+		<h1> Schedule Date</h1>
+	
+		<table class="table" style="width: 500px">
+	
+		</tr>
+				<th>Schedule Date </th>
+				<td><input type="datetime-local" name="st" required class="form-control"></td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2"><input type="submit" name="add" value="ADD" class="btn btn-success"></td>
+			</tr>
+		</table>
+ 		</form>
+
+
+	<h1 style="color: black">View Schedule Date</h1>
+					<form method="post">
+
+		<table class="table" style="width: auto;">
+			<tr>
+				
+				<th>slno</th>
+				<th>schedule date</th>
+			</tr>
+	
+				{% for row in data['view']%}
+			<tr>
+				
+				<td>{{loop.index}}</td>
+				<td>{{row['schedule_date']}}</td>
+								
+				
+			</tr>
+				{% endfor %}
+			
+
+		</table>
+
+</form>
+</center>
+</div>
+<!--           </div>
+ -->        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+{% include 'footer.html'%}

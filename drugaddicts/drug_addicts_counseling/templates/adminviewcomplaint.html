@@ -1,0 +1,52 @@
+{% include 'adminheader.html' %}
+
+<section id="hero" class="hero d-flex align-items-center" style="height: auto">
+
+    <div class="container">
+      <div class="row">
+              
+                  <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+ <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="/static/assets/img/values-1.png" class="img-fluid" alt="" style="margin-right: -44em">
+
+
+
+<center>
+		<form method="post" style="margin-top: -19em">
+
+
+
+		
+		<h1 style="color: black">View Complaint</h1>
+		<table class="table" style="width: auto;color: black">
+			<tr>
+				<th>user Name</th>
+				<th> Complaint</th>
+				<th> Reply</th>
+				<th>Date</th>
+			</tr>
+			{% for row in data['complaints']%}
+			<tr>
+				<td>{{row['firstname']}} {{row['lastname']}}</td>
+				<td>{{row['complaint']}}</td>
+				{% if row['reply']=="reply-pending"%}
+			<td><a class="btn btn-success" href="adminsendreply?cid={{row['complaint_id']}}">reply</a></td>
+					{% else %}
+				<td>{{row['reply']}}</td>
+				{%endif%}
+				<td>{{row['date']}}</td>
+			</tr>
+			{% endfor%}
+		</table>
+
+</form>
+</center>
+</div>
+<!--           </div>
+ -->        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+{% include 'footer.html' %}

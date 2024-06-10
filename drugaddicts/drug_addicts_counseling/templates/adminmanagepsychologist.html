@@ -1,0 +1,141 @@
+{% include 'adminheader.html'%}
+
+<section id="hero" class="hero d-flex align-items-center" style="height: auto">
+
+    <div class="container">
+      <div class="row">
+              
+                  <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+ <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/values-1.png" class="img-fluid" alt="" style="margin-right: -44em">
+
+
+
+		<form method="post" style="margin-top: -1em">
+	<center>
+		{% if data['updates'] %}
+	<h1>Update Manage psychologist</h1>
+	
+		<table class="table" style="width: 500px">
+
+			<tr>
+				<th>First Name</th>
+				<td><input type="text" name="f" required class="form-control" value="{{data['updates'][0]['firstname']}}"></td>
+			</tr>
+			<tr>
+				<th>Last Name</th>
+				<td><input type="text" name="l" required class="form-control" value="{{data['updates'][0]['lastname']}}"></td>
+			</tr>
+			<tr>
+				<th>Place</th>
+				<td><input type="text" name="pl" required class="form-control" value="{{data['updates'][0]['place']}}"></td>
+			</tr>
+			<tr>
+				<th>Phone</th>
+				<td><input type="text" name="ph" required class="form-control" value="{{data['updates'][0]['phone']}}"></td>
+			</tr>
+			<tr>
+				<th>Email</th>
+				<td><input type="email" name="e" required class="form-control" value="{{data['updates'][0]['email']}}"></td>
+			</tr>
+			
+			<tr>
+				<th>Desgination</th>
+				<td><input type="text" name="desg" required class="form-control" value="{{data['updates'][0]['designation']}}"></td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2"><input type="submit" name="update" value="UPDATE" class="btn btn-success"></td>
+			</tr>
+		</table>
+		{% else %}
+		<br><br>
+		<h1> Manage psychologist</h1>
+	
+		<table class="table" style="width: 500px">
+	
+			<tr>
+				<th>First Name</th>
+				<td><input type="text" name="f" required class="form-control"></td>
+			</tr>
+			<tr>
+				<th>Last Name</th>
+				<td><input type="text" name="l" required class="form-control"></td>
+			</tr>
+			<tr>
+				<th>Place</th>
+				<td><input type="text" name="pl" required class="form-control"></td>
+			</tr>
+			<tr>
+				<th>Phone</th>
+				<td><input type="text" name="ph" pattern="[0-9]{10}" required class="form-control"></td>
+			</tr>
+			
+			<tr>
+				<th>Desgination</th>
+				<td><input type="text" name="desg" required class="form-control"></td>
+			</tr>
+
+ 			<tr>
+				<th>Email</th>
+				<td><input type="email" name="e" required class="form-control"></td>
+			</tr>
+				<th>Username</th>
+				<td><input type="text" name="uname" required class="form-control"></td>
+			</tr>
+		</tr>
+				<th>Password</th>
+				<td><input type="text" name="p" required class="form-control"></td>
+			</tr>
+			<tr>
+				<td align="center" colspan="2"><input type="submit" name="register" value="ADD" class="btn btn-success"></td>
+			</tr>
+		</table>
+		{% endif %}
+ 		</form>
+
+
+	<h1 style="color: black">View psychologist</h1>
+					<form method="post">
+
+		<table class="table" style="width: auto;">
+			<tr>
+				
+				<th>psychologist Name</th>
+
+				<th>Email</th>
+
+				<th>Phone</th>
+
+				<th>Place</th>
+				<th>Designation</th>
+			</tr>
+	
+				{% for row in data['view']%}
+			<tr>
+				
+				<td>{{row['firstname']}} {{row['lastname']}}</td>
+				<td>{{row['email']}}</td>
+				<td>{{row['phone']}}</td>
+				<td>{{row['place']}}</td>
+				<td>{{row['designation']}}</td>
+				<td>
+				<a class="btn btn-warning" href="?action=update&tid={{row['psychologist_id']}}">update</a></td>
+				<td><a class="btn btn-danger" href="?action=delete&tid={{row['psychologist_id']}}">delete</a>
+				</td>
+				
+			</tr>
+				{% endfor %}
+			
+
+		</table>
+
+</form>
+</center>
+</div>
+<!--           </div>
+ -->        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+{% include 'footer.html'%}

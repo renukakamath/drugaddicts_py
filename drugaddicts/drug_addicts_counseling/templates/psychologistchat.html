@@ -1,0 +1,60 @@
+{% include 'psychologistheader.html' %}
+
+<section id="hero" class="hero d-flex align-items-center" style="height: auto">
+
+    <div class="container">
+      <div class="row">
+              
+                  <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+ <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="/static/assets/img/values-1.png" class="img-fluid" alt="" style="margin-right: -44em">
+
+<br><br><br><br>
+
+<center>
+		<form method="post" style="margin-top: -19em">
+
+
+
+	<h1 style="color: black">View Psychologist</h1>
+					<form method="post">
+
+		<table class="table" style="width: auto;">
+			<tr>
+				
+				<th>psychologist Name</th>
+
+				<th>Email</th>
+
+				<th>Phone</th>
+
+				<th>Place</th>
+			</tr>
+	
+				{% for row in data['view']%}
+			<tr>
+				
+				<td>{{row['firstname']}} {{row['lastname']}}</td>
+				<td>{{row['email']}}</td>
+				<td>{{row['phone']}}</td>
+				<td>{{row['place']}}</td>
+				<td>
+				<a class="btn btn-warning" href="psychologistchatwithuser?lid={{row['login_id']}}">chat</a></td>
+				
+			</tr>
+				{% endfor %}
+			
+
+		</table>
+</form>
+</center>
+<br><br><br><br><br><br><br><br>
+</div>
+<!--           </div>
+ -->        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+{% include 'footer.html' %}

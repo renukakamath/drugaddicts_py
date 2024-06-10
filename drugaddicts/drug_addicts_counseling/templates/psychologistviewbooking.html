@@ -1,0 +1,54 @@
+{% include 'psychologistheader.html' %}
+
+<section id="hero" class="hero d-flex align-items-center" style="height: auto">
+
+    <div class="container">
+      <div class="row">
+              
+                  <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+ <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="/static/assets/img/values-1.png" class="img-fluid" alt="" style="margin-right: -44em">
+
+
+
+<center>
+		<form method="post" style="margin-top: -19em">
+
+
+
+		
+		<h1 style="color: black">View Booking</h1>
+		<table class="table" style="width: auto;color: black">
+			<tr>
+				<th>user Name</th>
+				<th>Psychologist</th>
+				<th> booked date</th>
+				<th>status</th>
+			</tr>
+			{% for row in data['view']%}
+			<tr>
+				<td>{{row['firstname']}} {{row['lastname']}}</td>
+				<td>{{row['fn']}} {{row['ln']}}</td>
+				
+				<td>{{row['booking_date']}}</td>
+				<td>{{row['status']}}</td>
+				<td><a class="btn btn-info" href="psychologistviewuserdetails?bid={{row['user_id']}}">user details</a></td>
+				<td><a class="btn btn-warning" href="psychologistscheduletime?bid={{row['booking_id']}}"> schedule time</a></td>
+				<td><a class="btn btn-primary" href="psychologistchat?bid={{row['booking_id']}}"> chat</a></td>
+				<td><a class="btn btn-danger" href="psychologistaddmedicineandmedition?bid={{row['booking_id']}}"> add meditation and medicine</a></td>
+			</tr>
+			{% endfor%}
+		</table>
+
+</form>
+</center>
+<br><br><br><br><br><br><br><br>
+</div>
+<!--           </div>
+ -->        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+{% include 'footer.html' %}

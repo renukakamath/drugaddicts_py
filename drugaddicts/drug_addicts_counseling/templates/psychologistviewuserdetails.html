@@ -1,0 +1,59 @@
+{% include 'psychologistheader.html' %}
+
+<section id="hero" class="hero d-flex align-items-center" style="height: auto">
+
+    <div class="container">
+      <div class="row">
+              
+                  <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+ <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="/static/assets/img/values-1.png" class="img-fluid" alt="" style="margin-right: -44em">
+
+
+
+    <form method="post" style="margin-top: -19em">
+  <h2 style="font-size: 40px;color: black;font-weight:bold;margin-left: -4em;">
+   VIEW USERS  </h2>
+
+
+
+    <table class="table" style="width:500px;margin-left: 17em; height:auto;color: black">
+      <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Place</th>
+        
+        <th>Phone</th>
+        <th>Email</th>
+        
+      </tr>
+     
+
+    {%for row in data['view']%}
+      <tr>
+     <td>{{row['firstname'] }}</td>
+      <td>{{row['lastname'] }}</td>
+      <td>{{row['place'] }}</td>
+      
+      <td>{{row['phone'] }}</td>
+      <td>{{row['email'] }}</td>
+      
+      </tr>
+{%endfor%}
+
+
+
+
+     
+    </table>
+   
+        
+    </center>
+</form>  
+<br><br><br><br><br><br><br><br><br><br> 
+</div></div></div></div></div></section>   
+
+
+
+{% include 'footer.html' %}
